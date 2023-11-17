@@ -14,7 +14,6 @@ update() {
         eval cp /root/.cme/workspaces/default/smb.db /root/.cme/cme_smb.bak 2>/dev/null
         eval rm -f /home/kali/.cme/workspaces/default/smb.db 2>/dev/null
         eval rm -f /root/.cme/workspaces/default/smb.db 2>/dev/null
-        alias cme='nxc'
         echo 'Replacing cme with nxc'
         goodbyecme
         echo 'Done'
