@@ -10,10 +10,10 @@ update() {
         eval pip3 install ./NetExec/. 1>/dev/null 2>/dev/null
         echo 'Cleaning up'
         eval rm -rf NetExec
-        eval cp /home/kali/.cme/workspaces/default/smb.db /kali/.cme/cme_smb.bak 2>/dev/null 
-        eval cp /root/.cme/workspaces/default/smb.db /root/.cme/cme_smb.bak 2>/dev/null
-        eval rm -f /home/kali/.cme/workspaces/default/smb.db 2>/dev/null
-        eval rm -f /root/.cme/workspaces/default/smb.db 2>/dev/null
+        eval cp /home/kali/.nxc/workspaces/default/smb.db /kali/.nxc/nxc_smb.bak 2>/dev/null 
+        eval cp /root/.cme/workspaces/default/smb.db /root/.nxc/nxc_smb.bak 2>/dev/null
+        eval rm -f /home/kali/.nxc/workspaces/default/smb.db 2>/dev/null
+        eval rm -f /root/.nxc/workspaces/default/smb.db 2>/dev/null
         echo 'Replacing cme with nxc'
         goodbyecme
         echo 'Done'
